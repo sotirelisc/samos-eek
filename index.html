@@ -376,12 +376,100 @@
   <h3 class="text-center">ΔΡΟΜΟΛΟΓΙΑ</h3>
 
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#bus">ΑΣΤΙΚΗ ΣΥΓΚΟΙΝΩΝΙΑ</a></li>
+    <li class="active"><a data-toggle="tab" href="#ktel">ΚΤΕΛ</a></li>
+    <li><a data-toggle="tab" href="#bus">ΑΣΤΙΚΗ ΣΥΓΚΟΙΝΩΝΙΑ</a></li>
     <li><a data-toggle="tab" href="#ferry">FERRY BOATS</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="bus" class="tab-pane fade in active">
+    <div id="ktel" class="tab-pane fade in active">
+      <h2>ΚΤΕΛ</h2>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <tr>
+            <th>ΔΡΟΜΟΛΟΓΙΑ ΑΠΟ ΣΑΜΟ (ΒΑΘΥ) ΓΙΑ<br></th>
+            <th>ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΕΥΗ<br></th>
+            <th>ΣΑΒΒΑΤΟ</th>
+          </tr>
+          <tr>
+            <td>ΚΟΚΚΑΡΙ - ΛΕΜΟΝΑΚΙΑ - ΤΣΑΜΑΔΟΥ - ΑΥΛΑΚΙΑ -<br> ΤΣΑΜΠΟΥ - ΑΓ. ΚΩΝ/ΝΟΣ - ΚΑΡΛΟΒΑΣΙ</td>
+            <td>08:30 - 11:00 - 12:20 - 14:00 - 17:00</td>
+            <td>08:30 - 14:00 - 17:00</td>
+          </tr>
+          <tr>
+            <td>ΠΥΘΑΓΟΡΕΙΟ ΑΠΕΥΘΕΙΑΣ</td>
+            <td>06:15-09:00-09:30 - 11:00-12:45-14:00-17:00</td>
+            <td>11:00 - 14:00 - 16:00</td>
+          </tr>
+          <tr>
+            <td>ΠΥΘΑΓΟΡΕΙΟ (ΜΕΣΩ ΜΥΤΙΛΗΝΙΩΝ)</td>
+            <td>09:45</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΜΥΤΙΛΗΝΙΟΙ</td>
+            <td>09:45 - (08:00 - 11:00 - 12:45 - 17:00 ΜΕΣΩ ΠΥΘΑΓΟΡΕΙΟΥ)</td>
+            <td>11:00 - 14:00 ΜΕΣΩ ΠΥΘΑΓΟΡΕΙΟΥ</td>
+          </tr>
+          <tr>
+            <td>ΠΟΤΟΚΑΚΙ</td>
+            <td>09:45 - 14:00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΧΩΡΑ</td>
+            <td>09:00 - 09:45 - 11:00 - 12:45 - 14:00 - 17:00</td>
+            <td>11:00 - 14:00</td>
+          </tr>
+          <tr>
+            <td>ΗΡΑΙΟΝ</td>
+            <td>06:15 - 09:30 - 14:00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΠΑΓΩΝΔΑ</td>
+            <td>06:15 - 14:00 ΔΕΥΤΕΡΑ</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΜΥΛΟΙ</td>
+            <td>06:15 - 14:00 ΚΑΘΕ ΔΕΥΤΕΡΑ</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΚΟΥΜΑΡΑΔΑΙΟΙ-ΠΥΡΓΟΣ</td>
+            <td>14:00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΠΥΡΓΟΣ-ΚΑΡΛΟΒΑΣΙ</td>
+            <td>08:00 ΚΑΘΕ ΔΕΥΤΕΡΑ</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΒΟΥΡΛΙΩΤΕΣ</td>
+            <td>14:00 ΔΕΥΤΕΡΑ</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΚΑΛΛΙΘΕΑ-ΔΡΑΚΑΙΟΙ</td>
+            <td>12:20 ΚΑΘΕ ΔΕΥΤΕΡΑ</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>ΒΟΤΣΑΛΑΚΙΑ</td>
+            <td>12:20</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td><b>ΑΕΡΟΔΡΟΜΙΟ</b></td>
+            <td>06:15 - 08:00 - 11:00 - 12:45 - 14:00 - 17:00</td>
+            <td>11:00 - 14:00 - 16:00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="bus" class="tab-pane fade">
       <h2>ΑΣΤΙΚΗ ΣΥΓΚΟΙΝΩΝΙΑ</h2>
       <p>Δρομολόγια Αστικής Συγκοινωνίας</p>
     </div>
@@ -395,7 +483,7 @@
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDoK0B2X9Jt8FutIJ5XCBO22-3Mry4-3JQ"></script>
 <script>
-  var myCenter = new google.maps.LatLng(37.751539, 26.976167);
+  var myCenter = new google.maps.LatLng(41.82709, 76.1854);
 
   function initialize() {
     var mapProp = {
