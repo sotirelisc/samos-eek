@@ -684,6 +684,16 @@
     var content8 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΔΕΔΔΗΕ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/deddhe.jpg\'>';
     var content9 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΝΟΣΟΚΟΜΕΙΟ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/nosokomeio.jpg\'>';
     var content10 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Πλατεία Πυθαγόρα<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/plateia_pythagora.jpg\'>';
+    var content11 = '<b>ΕΥΡΩΠΑΙΚΗ ΕΒΔΟΜΑΔΑ ΚΙΝΗΤΙΚΟΤΗΤΑΣ</b><br>Παραλιακή Βαθέος / Πεζόδρομος<br><b>Σημείο Εκδήλωσης</b><br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/paralia.jpg\'>';
+    var content12 = '<b>ΕΥΡΩΠΑΙΚΗ ΕΒΔΟΜΑΔΑ ΚΙΝΗΤΙΚΟΤΗΤΑΣ</b><br>Μουσείο Οίνου<br><b>Σημείο Εκδήλωσης</b><br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/mouseio.jpg\'>';
+    var content13 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Πλατεία Δημαρχείου<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stathmos_podilata.jpg\'>';
+    var content14 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Γήπεδο Τέννις / Παραλιακή Οδός Θεμιστοκλή Σοφούλη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/podilata_tennis.jpg\'>';
+    var content15 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Επιβατικός Λιμένας Σάμου<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/podilata_limani.jpg\'>';
+    var content16 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Ποταμάκι Αφετηρία<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_potamaki.jpg\'>';
+    var content17 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Νεάπολη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_neapoli.jpg\'>';
+    var content18 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Πευκάκια<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_peukakia.jpg\'>';
+    var content19 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΕΟΣΣ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_eoss.jpg\'>';
+    var content20 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Περίπτερο Ζάχαρη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_periptero.jpg\'>';
 
     var infowindow1 = new google.maps.InfoWindow({
       content: content1
@@ -714,6 +724,36 @@
     });
     var infowindow10 = new google.maps.InfoWindow({
       content: content10
+    });
+    var infowindow11 = new google.maps.InfoWindow({
+      content: content11
+    });
+    var infowindow12 = new google.maps.InfoWindow({
+      content: content12
+    });
+    var infowindow13 = new google.maps.InfoWindow({
+      content: content13
+    });
+    var infowindow14 = new google.maps.InfoWindow({
+      content: content14
+    });
+    var infowindow15 = new google.maps.InfoWindow({
+      content: content15
+    });
+    var infowindow16 = new google.maps.InfoWindow({
+      content: content16
+    });
+    var infowindow17 = new google.maps.InfoWindow({
+      content: content17
+    });
+    var infowindow18 = new google.maps.InfoWindow({
+      content: content18
+    });
+    var infowindow19 = new google.maps.InfoWindow({
+      content: content19
+    });
+    var infowindow20 = new google.maps.InfoWindow({
+      content: content20
     });
 
     var marker1 = new google.maps.Marker({
@@ -776,6 +816,66 @@
     marker10.addListener('click', function() {
       infowindow10.open(map, marker10);
     });
+    var marker11 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.756789, 26.974033),
+    });
+    marker11.addListener('click', function() {
+      infowindow11.open(map, marker11);
+    });
+    var marker12 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.750144, 26.961792),
+    });
+    marker12.addListener('click', function() {
+      infowindow12.open(map, marker12);
+    });
+    var marker13 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.753958, 26.978819),
+    });
+    marker13.addListener('click', function() {
+      infowindow13.open(map, marker13);
+    });
+    var marker14 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.750436, 26.974944),
+    });
+    marker14.addListener('click', function() {
+      infowindow14.open(map, marker14);
+    });
+    var marker15 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.758839, 26.970444),
+    });
+    marker15.addListener('click', function() {
+      infowindow15.open(map, marker15);
+    });
+    var marker16 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.746294, 26.981200),
+    });
+    marker16.addListener('click', function() {
+      infowindow16.open(map, marker16);
+    });
+    var marker17 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.748400, 26.977086),
+    });
+    marker17.addListener('click', function() {
+      infowindow17.open(map, marker17);
+    });
+    var marker18 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.747714, 26.971692),
+    });
+    marker18.addListener('click', function() {
+      infowindow18.open(map, marker18);
+    });
+    var marker19 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.750097, 26.962267),
+    });
+    marker19.addListener('click', function() {
+      infowindow19.open(map, marker19);
+    });
+    var marker20 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.749433, 26.974256),
+    });
+    marker20.addListener('click', function() {
+      infowindow20.open(map, marker20);
+    });
 
     marker1.setMap(map);
     marker2.setMap(map);
@@ -787,6 +887,17 @@
     marker8.setMap(map);
     marker9.setMap(map);
     marker10.setMap(map);
+    marker11.setMap(map);
+    marker12.setMap(map);
+    marker13.setMap(map);
+    marker14.setMap(map);
+    marker15.setMap(map);
+    marker16.setMap(map);
+    marker17.setMap(map);
+    marker18.setMap(map);
+    marker19.setMap(map);
+    marker20.setMap(map);
+
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
