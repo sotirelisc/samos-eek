@@ -136,7 +136,7 @@
       background-color: #002e4d;
       color: #f5f5f5;
       padding: 32px;
-      font-size: 0.9em;
+      font-size: 0.8em;
   }
   footer a {
       color: #f5f5f5;
@@ -226,6 +226,7 @@
       <p>Ιδιαίτερα σημαντικός είναι ο ρόλος των τοπικών αρχών ως προς την αλλαγή των συμπεριφορών και συνηθειών μετακίνησης των δημοτών με ανάπτυξη βιώσιμων τοπικών σχεδίων κινητικότητας.</p>
       <p>Στόχος είναι η ανάδειξη του αστικού περιβάλλοντος εξασφαλίζοντας άριστη κυκλοφοριακή ΣΥΝΔΕΣΗ με ταυτόχρονη εξοικονόμηση ενέργειας, χρήση καθαρότερης ενέργειας, ορθολογική διαχείριση του υπάρχοντος μεταφορικού δικτύου, εναλλακτικούς τρόπους μετακίνησης – τόνωση της ζωτικότητας των πόλεων, ενίσχυση των κοινωνικών συναλλαγών και δημιουργία ποιοτικής «ατμόσφαιρας» στις πόλεις με λιγότερη ατμοσφαιρική και ακουστική ρύπανση.</p>
       <p>Χάρη στην μεγάλη συμμετοχή ομάδων, συλλόγων, οργανώσεων και εθελοντών από τις 16 έως τις 22 Σεπτεμβρίου, δεκάδες εκδηλώσεις, για μικρούς και μεγάλους θα λάβουν χώρα στην πόλη της Σάμου, το Καρλόβασι, το Πυθαγόρειο και τον Μαραθόκαμπο. Ελάτε να γιορτάσουμε παίζοντας, μαθαίνοντας, ενημερώνοντας, ευαισθητοποιώντας τους εαυτούς μας και τους άλλους!!!</p>
+      <img class="img-responsive center-block" width="304" height="236" src='images/first.jpg'>
     </div>
   </div>
 </div>
@@ -668,9 +669,12 @@
     var content2 = '<b>ΕΠΙΒΑΤΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Πόλη της Σάμου<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/epivatikos.jpg\'>';
     var content3 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Εμπορικός Λιμένας / Περιοχή Μαλαγάρι<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/podilata_malagari.jpg\'>';
     var content4 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Επιβατικός Λιμένας / Τουριστικό Λιμάνι<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_touristiko.jpg\'>';
-    var content5 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Τράπεζα Πειραιώς<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_peiraios.jpg\'>';
+    var content5 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Τράπεζα Πειραιώς<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_peiraios.jpg\'><br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_peiraios2.jpg\'>';
     var content6 = '<b>ΣΤΑΘΜΟΣ ΤΑΞΙ</b><br>Παραλιακή Οδός Θεμιστοκλή Σοφούλη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/taxi.jpg\'>';
     var content7 = '<b>ΣΤΑΘΜΟΣ ΚΤΕΛ</b><br>Παραλιακή Οδός Θεμιστοκλή Σοφούλη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/ktel.jpg\'>';
+    var content8 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΔΕΔΔΗΕ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/deddhe.jpg\'>';
+    var content9 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΝΟΣΟΚΟΜΕΙΟ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/nosokomeio.jpg\'>';
+    var content10 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Πλατεία Πυθαγόρα<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/plateia_pythagora.jpg\'>';
 
     var infowindow1 = new google.maps.InfoWindow({
       content: content1
@@ -692,6 +696,15 @@
     });
     var infowindow7 = new google.maps.InfoWindow({
       content: content7
+    });
+    var infowindow8 = new google.maps.InfoWindow({
+      content: content8
+    });
+    var infowindow9 = new google.maps.InfoWindow({
+      content: content9
+    });
+    var infowindow10 = new google.maps.InfoWindow({
+      content: content10
     });
 
     var marker1 = new google.maps.Marker({
@@ -736,6 +749,24 @@
     marker7.addListener('click', function() {
       infowindow7.open(map, marker7);
     });
+    var marker8 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.749067, 26.960517),
+    });
+    marker8.addListener('click', function() {
+      infowindow8.open(map, marker8);
+    });
+    var marker9 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.761379, 26.969149),
+    });
+    marker9.addListener('click', function() {
+      infowindow9.open(map, marker9);
+    });
+    var marker10 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.755869, 26.976229),
+    });
+    marker10.addListener('click', function() {
+      infowindow10.open(map, marker10);
+    });
 
     marker1.setMap(map);
     marker2.setMap(map);
@@ -744,6 +775,9 @@
     marker5.setMap(map);
     marker6.setMap(map);
     marker7.setMap(map);
+    marker8.setMap(map);
+    marker9.setMap(map);
+    marker10.setMap(map);
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
