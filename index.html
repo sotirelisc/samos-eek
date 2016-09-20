@@ -184,7 +184,6 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -665,9 +664,13 @@
 
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    var content1 = '<b>ΕΜΠΟΡΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Περιοχή Μαλαγάρι<br><img class=\"img-responsive\"  width=\"304\" height=\"236\" src=\'images/emporikos_mal.jpg\'>';
-    var content2 = '<b>ΕΠΙΒΑΤΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Πόλη της Σάμου<br><img class=\"img-responsive\"  width=\"304\" height=\"236\" src=\'images/epivatikos.jpg\'>';
-    var content3 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Εμπορικός Λιμένας / Περιοχή Μαλαγάρι<br><img class=\"img-responsive\"  width=\"304\" height=\"236\" src=\'images/podilata_malagari.jpg\'>';
+    var content1 = '<b>ΕΜΠΟΡΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Περιοχή Μαλαγάρι<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/emporikos_mal.jpg\'>';
+    var content2 = '<b>ΕΠΙΒΑΤΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Πόλη της Σάμου<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/epivatikos.jpg\'>';
+    var content3 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Εμπορικός Λιμένας / Περιοχή Μαλαγάρι<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/podilata_malagari.jpg\'>';
+    var content4 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Επιβατικός Λιμένας / Τουριστικό Λιμάνι<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_touristiko.jpg\'>';
+    var content5 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Τράπεζα Πειραιώς<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_peiraios.jpg\'>';
+    var content6 = '<b>ΣΤΑΘΜΟΣ ΤΑΞΙ</b><br>Παραλιακή Οδός Θεμιστοκλή Σοφούλη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/taxi.jpg\'>';
+    var content7 = '<b>ΣΤΑΘΜΟΣ ΚΤΕΛ</b><br>Παραλιακή Οδός Θεμιστοκλή Σοφούλη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/ktel.jpg\'>';
 
     var infowindow1 = new google.maps.InfoWindow({
       content: content1
@@ -677,6 +680,18 @@
     });
     var infowindow3 = new google.maps.InfoWindow({
       content: content3
+    });
+    var infowindow4 = new google.maps.InfoWindow({
+      content: content4
+    });
+    var infowindow5 = new google.maps.InfoWindow({
+      content: content5
+    });
+    var infowindow6 = new google.maps.InfoWindow({
+      content: content6
+    });
+    var infowindow7 = new google.maps.InfoWindow({
+      content: content7
     });
 
     var marker1 = new google.maps.Marker({
@@ -697,10 +712,38 @@
     marker3.addListener('click', function() {
       infowindow3.open(map, marker3);
     });
+    var marker4 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.757716, 26.971172),
+    });
+    marker4.addListener('click', function() {
+      infowindow4.open(map, marker4);
+    });
+    var marker5 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.756693, 26.974421),
+    });
+    marker5.addListener('click', function() {
+      infowindow5.open(map, marker5);
+    });
+    var marker6 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.755711, 26.976362),
+    });
+    marker6.addListener('click', function() {
+      infowindow6.open(map, marker6);
+    });
+    var marker7 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.752282, 26.976743),
+    });
+    marker7.addListener('click', function() {
+      infowindow7.open(map, marker7);
+    });
 
     marker1.setMap(map);
     marker2.setMap(map);
     marker3.setMap(map);
+    marker4.setMap(map);
+    marker5.setMap(map);
+    marker6.setMap(map);
+    marker7.setMap(map);
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
