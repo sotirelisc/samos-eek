@@ -652,7 +652,7 @@
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDoK0B2X9Jt8FutIJ5XCBO22-3Mry4-3JQ"></script>
 <script>
-  var myCenter = new google.maps.LatLng(41.82709, 76.1854);
+  var myCenter = new google.maps.LatLng(37.751345, 26.975858);
 
   function initialize() {
     var mapProp = {
@@ -665,20 +665,42 @@
 
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    var content1 = 'This is just a τέστ!';
+    var content1 = '<b>ΕΜΠΟΡΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Περιοχή Μαλαγάρι<br><img class=\"img-responsive\"  width=\"304\" height=\"236\" src=\'images/emporikos_mal.jpg\'>';
+    var content2 = '<b>ΕΠΙΒΑΤΙΚΟΣ ΛΙΜΕΝΑΣ</b><br>Πόλη της Σάμου<br><img class=\"img-responsive\"  width=\"304\" height=\"236\" src=\'images/epivatikos.jpg\'>';
+    var content3 = '<b>ΣΤΑΘΜΟΣ ΔΗΜΟΤΙΚΩΝ ΠΟΔΗΛΑΤΩΝ</b><br>Εμπορικός Λιμένας / Περιοχή Μαλαγάρι<br><img class=\"img-responsive\"  width=\"304\" height=\"236\" src=\'images/podilata_malagari.jpg\'>';
 
     var infowindow1 = new google.maps.InfoWindow({
       content: content1
     });
+    var infowindow2 = new google.maps.InfoWindow({
+      content: content2
+    });
+    var infowindow3 = new google.maps.InfoWindow({
+      content: content3
+    });
 
     var marker1 = new google.maps.Marker({
-      position: myCenter,
+      position: new google.maps.LatLng(37.752564, 26.959527),
     });
     marker1.addListener('click', function() {
       infowindow1.open(map, marker1);
     });
+    var marker2 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.757346, 26.970824),
+    });
+    marker2.addListener('click', function() {
+      infowindow2.open(map, marker2);
+    });
+    var marker3 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.751599, 26.959766),
+    });
+    marker3.addListener('click', function() {
+      infowindow3.open(map, marker3);
+    });
 
     marker1.setMap(map);
+    marker2.setMap(map);
+    marker3.setMap(map);
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
