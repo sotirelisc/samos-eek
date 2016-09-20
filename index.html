@@ -102,7 +102,7 @@
   }
   #googleMap {
       width: 100%;
-      height: 800px;
+      height: 900px;
   }  
   .navbar {
       margin-bottom: 0;
@@ -661,12 +661,12 @@
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDoK0B2X9Jt8FutIJ5XCBO22-3Mry4-3JQ"></script>
 <script>
-  var myCenter = new google.maps.LatLng(37.751345, 26.975858);
+  var myCenter = new google.maps.LatLng(37.754973, 26.969343);
 
   function initialize() {
     var mapProp = {
       center: myCenter,
-      zoom: 15,
+      zoom: 16,
       scrollwheel: false,
       draggable: true,
       mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -692,8 +692,14 @@
     var content16 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Ποταμάκι Αφετηρία<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_potamaki.jpg\'>';
     var content17 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Νεάπολη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_neapoli.jpg\'>';
     var content18 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Πευκάκια<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_peukakia.jpg\'>';
-    var content19 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΕΟΣΣ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_eoss.jpg\'>';
-    var content20 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Περίπτερο Ζάχαρη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_periptero.jpg\'>';
+    var content19 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΕΟΣΣ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_eoss.jpg\'><br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_eoss2.jpg\'>';
+    var content20 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Περίπτερο Ζαχαράκη<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_periptero.jpg\'>';
+    var content21 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΣΟΑ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_soa.jpg\'>';
+    var content22 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Διασταύρωση Καλάμι (Στροφή Σούτου)<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_kalami.jpg\'>';
+    var content23 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Γάγκου<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_gagkou.jpg\'>';
+    var content24 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση ΞΕΝΙΑ<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_ksenia.jpg\'>';
+    var content25 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Άγιος Χαράλαμπος<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_xaralampos.jpg\'>';
+    var content26 = '<b>ΣΤΑΣΕΙΣ ΔΗΜΟΤΙΚΗΣ ΣΥΓΚΟΙΝΩΝΙΑΣ</b><br>Στάση Ποταμάκι Τερματισμός<br><img class=\"img-responsive\" width=\"304\" height=\"236\" src=\'images/stasi_terma.jpg\'>';
 
     var infowindow1 = new google.maps.InfoWindow({
       content: content1
@@ -754,6 +760,24 @@
     });
     var infowindow20 = new google.maps.InfoWindow({
       content: content20
+    });
+    var infowindow21 = new google.maps.InfoWindow({
+      content: content21
+    });
+    var infowindow22 = new google.maps.InfoWindow({
+      content: content22
+    });
+    var infowindow23 = new google.maps.InfoWindow({
+      content: content23
+    });
+    var infowindow24 = new google.maps.InfoWindow({
+      content: content24
+    });
+    var infowindow25 = new google.maps.InfoWindow({
+      content: content25
+    });
+    var infowindow26 = new google.maps.InfoWindow({
+      content: content26
     });
 
     var marker1 = new google.maps.Marker({
@@ -876,6 +900,42 @@
     marker20.addListener('click', function() {
       infowindow20.open(map, marker20);
     });
+    var marker21 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.763692, 26.969892),
+    });
+    marker21.addListener('click', function() {
+      infowindow21.open(map, marker21);
+    });
+    var marker22 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.766600, 26.967375),
+    });
+    marker22.addListener('click', function() {
+      infowindow22.open(map, marker22);
+    });
+    var marker23 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.763831, 26.966447),
+    });
+    marker23.addListener('click', function() {
+      infowindow23.open(map, marker23);
+    });
+    var marker24 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.754008, 26.976903),
+    });
+    marker24.addListener('click', function() {
+      infowindow24.open(map, marker24);
+    });
+    var marker25 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.746525, 26.979156),
+    });
+    marker25.addListener('click', function() {
+      infowindow25.open(map, marker25);
+    });
+    var marker26 = new google.maps.Marker({
+      position: new google.maps.LatLng(37.746292, 26.981200),
+    });
+    marker26.addListener('click', function() {
+      infowindow26.open(map, marker26);
+    });
 
     marker1.setMap(map);
     marker2.setMap(map);
@@ -897,7 +957,12 @@
     marker18.setMap(map);
     marker19.setMap(map);
     marker20.setMap(map);
-
+    marker21.setMap(map);
+    marker22.setMap(map);
+    marker23.setMap(map);
+    marker24.setMap(map);
+    marker25.setMap(map);
+    marker26.setMap(map);
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
